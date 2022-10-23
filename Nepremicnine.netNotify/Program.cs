@@ -9,10 +9,10 @@ namespace Nepremicnine.netNotify
 {
     class Program
     {
-        static readonly string NepremecnineNetURL = "URL";
-        static readonly string SMSsenderAPIkey = "KEY";
+        static readonly string NepremecnineNetURL = "URL"; //URL to nepremicnine.net
+        static readonly string SMSsenderAPIkey = "KEY"; //Key for SMSsenderAPI
         static readonly int ThreadSleep = 1000 * 60 * 5; // ms * seconds * minutes = 5 min
-        static readonly string[] PhoneNumbers = new string[] {
+        static readonly string[] PhoneNumbers = new string[] { //Phone numbers for SMS sending
             "00386xxxxxxxx"
         };
 
@@ -46,7 +46,7 @@ namespace Nepremicnine.netNotify
 
                         try
                         {
-                            //If it does not containd an ID, then it is not an ad
+                            //If it does not contain an ID, then it is not an ad
                             if (!item.Attributes.Contains("id"))
                                 continue;
 
@@ -85,7 +85,7 @@ namespace Nepremicnine.netNotify
 
                     if (!isEqual)
                     {
-                        //We go thorugh all new ads and send an SMS
+                        //We go through all new ads and send an SMS
                         foreach (var item in trenutno)
                         {
                             if (!ads.ContainsKey(item.Key))
@@ -126,18 +126,18 @@ namespace Nepremicnine.netNotify
             {
                 if (SendSMS(item, message))
                 {
-                    Console.WriteLine("SMS sent to " + item + " succesfully!");
+                    Console.WriteLine("SMS sent to " + item + " successfully!");
                 }
                 else
                 {
-                    Console.WriteLine("SMS sent to " + item + " unsuccesfully!");
+                    Console.WriteLine("SMS sent to " + item + " unsuccessfully!");
                 }
             }
             Console.WriteLine("\n");
         }
 
         /// <summary>
-        /// Send an SMS to a desired phone number
+        /// Send an SMS to the desired phone number
         /// </summary>
         /// <param name="phone">Phone number</param>
         /// <param name="message">Message to send</param>
