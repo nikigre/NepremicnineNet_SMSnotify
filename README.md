@@ -1,7 +1,7 @@
 # Nepremicnine.netNotify
 Nepremicnine.netNotify is a C# program that checks [nepremicnine.net](https://nepremicnine.net) website for new ads. If it finds any, it sends an SMS to the desired phone number.
 
-In the middle of the summer, I was searching for an apartment in Ljubljana. I was on Nepremicnine.net all the time in search of a good apartment near the centre and my college. But almost whenever I found it, it would be taken by someone else who found it before me. This website has an automatic notifying option, but it sends an email at 1.00 in the morning. Useless... 🥺
+In the middle of the summer, I was searching for an apartment in Ljubljana. I was on Nepremicnine.net all the time in search of a good apartment near the centre and my college. But almost whenever I found it, it would be taken by someone else who found it before me. This website has an automatic notifying option, but it sends an email at 1.00 in the morning. Useless... 😔
 
 So one night I got an idea! How about if a write a program that checks the website for any new ads and then notifies me. So I did that. It is a really basic program that checks the website periodically and sends an SMS when a new ad is published.
 
@@ -30,7 +30,7 @@ This example will generate this link: [https://www.nepremicnine.net/24ur/oglasi-
 Then just copy the URL for a website and paste it into NepremecnineNetURL.
 
 ### Variable SMSsenderAPIkey
-For sending SMS via SMSsenderAPI please contact me and I will give you a key for free 😊.
+For sending SMS via SMSsenderAPI please contact me (email, contect form on my website) and I will give you a key 😊. More about the API you can read it [here](https://nikigre.si/sl/sms-sender-api/).
 
 When you get the key, just paste it into this variable.
 
